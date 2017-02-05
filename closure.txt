@@ -1,0 +1,38 @@
+DESCRIPTION:
+            A closure is an inner function that has an access to the outer function's variable-scope.The inner function has access  
+            not only to the outer function's variable,but also to the outer function's parameters.
+            
+            A closure is a function having access to the parent scope, even after the parent function has closed.
+            
+SCOPE OF CLOSURE:
+            The closure has three scopes.These scopes are as follows:
+                   
+            1) It has access to it's own scope (Variables defined between it's curly brackets).
+            2) It has access to the outer function Variables.
+            3) It has access to the global Variables.
+  
+HOW TO CREATE CLOSURE?
+            A closure can be created by adding a function inside another function.A closure is created when an inner function is
+            made accessible from outside of the function that created it. This typically occurs when an outer function returns 
+            an innerfunction. When this happens, the inner function maintains a reference to the environment in which it was
+            created.This means that it remembers all of the variables(and their values) that were in scope at the time.
+                         
+            Here below is a LINK of examples that help to create closure.
+                        
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Closure
+    
+NOTE*:
+            The inner function cannot call the outer function's arguments object,however even though it can call the outer function 
+            parameters directly.
+
+POINTS TO REMEMBER:
+            1) Closures contain a function and a reference to the environment in which the function was created.
+            2) A closure is formed when an outer function exposes an inner function.
+            3) Closures can be used to easily pass parameters to callback functions.
+            4) Closures should be not overused in constructors. 
+        
+REFERENCES:
+            Here below are the LINKS that help to understand the concept of Closure.
+           
+            https://www.youtube.com/watch?v=y8JQes7yyoI
+            http://www.w3schools.com/js/js_function_closures.asp
